@@ -1,0 +1,24 @@
+{
+  "title": "Martin Metodiev",
+  "contacts": {
+    "profiles": {
+      "github": {
+        "label": "GitHub",
+        "url": "https://github.com/martinmethod"
+      },
+      "codepen": {
+        "label": "CodePen",
+        "url": "http://codepen.io/martinmethod"
+      }
+    },
+    "data": {
+      "email": "metodiev.martin@gmail.com",
+      "phone": "+359 (88) 7741192"
+    }
+  },
+  "addons": {
+    "gallery": {
+      "label": "Projects gallery"
+    }
+  }
+}

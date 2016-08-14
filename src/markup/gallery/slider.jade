@@ -1,0 +1,22 @@
+html
+    body
+        #gallery-slider.modal.gallery-slider(tabindex='-1', role='dialog')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        a.all(href='javascript:;', data-toggle='modal', data-target='#gallery-overview', data-dismiss='modal')
+                            span ←
+                            |  Gallery
+                        span.modal-title
+                        a.close(href='javascript:;', data-dismiss='modal')
+                    .modal-body
+                        .jumboslider
+                            .jumboslider-viewport
+                                .jumboslider-overview
+                                    each item, index in projects
+                                        .jumboslider-item(id='#{index}', data-title='#{item.name}', data-shots='#{item.shots}')
+                                            if item.design
+                                                header
+                                                    p
+                                                        | Design:&nbsp;
+                                                        a(href='#{item.design.url}', target='_blank') #{item.design.author}

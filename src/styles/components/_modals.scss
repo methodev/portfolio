@@ -1,0 +1,146 @@
+/* =========================| Modals |========================= */
+
+
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  min-width: 320px;
+  overflow: hidden;
+  outline: 0;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 20px auto;
+}
+
+.modal-content {
+  @include box-shadow(0 3px 9px rgba($gray-base, .5));
+
+  position: relative;
+  margin: 0 20px;
+  background: $gray-darker url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAO0lEQVQYV2M0Njb+z0AAMBJSpKSkxIBXEUjBvXv38CuCuQKrSTATcCpCVwBSSNDhKIqwmYBiHT4FIIUApyMdyLfnnLMAAAAASUVORK5CYII=');
+  outline: 0;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: $gray-base;
+
+  &.in {
+    opacity: .5;
+    filter: alpha(opacity = 50);
+  }
+}
+
+.modal-header {
+  $header-size: 40px;
+
+  @include box-shadow(0 0 10px rgba($gray-base, .1));
+
+  position: relative;
+  z-index: 3;
+  height: $header-size;
+  line-height: $header-size;
+  text-align: center;
+  background-color: $body-bg;
+  border-bottom: 1px solid $gray-lightest;
+
+  .modal-title {
+    display: block;
+    margin: 0 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: $header-size;
+    height: $header-size;
+    text-decoration: none !important;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      font: 400 20px Arial;
+      line-height: $header-size;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+      content: '✖';
+    }
+  }
+}
+
+.modal-body {
+  height: calc(100vh - 80px);
+  min-height: 100px;
+  overflow: auto;
+}
+
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+.modal-header::before,
+.modal-header::after {
+  display: table;
+  content: '';
+}
+
+.modal-header::after {
+  clear: both;
+}
+
+
+.mobile {
+  .modal {
+    .modal-dialog,
+    .modal-content {
+      margin: 0;
+    }
+
+    .modal-body {
+      height: calc(100vh - 40px);
+    }
+  }
+
+  .jumboslider .jumboslider-item {
+    max-height: calc(100vh - 40px);
+  }
+}

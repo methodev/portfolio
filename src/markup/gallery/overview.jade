@@ -1,0 +1,26 @@
+html
+    body
+        #gallery-overview.modal.gallery-overview(tabindex='-1', role='dialog')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        span.modal-title Gallery
+                        a.close(href='javascript:;', data-dismiss='modal')
+                    .modal-body
+                        p.info
+                            | Projects whose design is honored to be served and cared for&nbsp;
+                            span
+                                | by professionally developed front-end structures with an accent on the UI.
+                                span
+                        .projects
+                            each item, index in projects
+                                if index != 'beauty_and_the_art'
+                                    article.project
+                                        .thumb
+                                            a.screenshots(rel='#{index}', data-title='#{item.name}', data-toggle='modal', data-target='#gallery-slider', data-dismiss='modal')
+                                                - var previewsLabel = (item.shots != 1 ? 'screenshots' : 'screenshot')
+                                                span
+                                                    strong #{item.shots}
+                                                    | #{previewsLabel}
+                                            img(src='assets/images/projects/thumbs/#{index}.jpg', width='200', alt='#{item.name}')
+                                        span.ttl #{item.name}

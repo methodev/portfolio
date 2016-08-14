@@ -1,0 +1,255 @@
+/* =========================| Gallery Slider |========================= */
+
+
+
+.gallery-slider {
+  &.modal {
+    .modal-header {
+      .all {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 15px;
+        text-decoration: none;
+      }
+    }
+
+    .modal-body {
+      margin: 0 auto;
+    }
+  }
+}
+
+.jumboslider {
+  position: static;
+
+  &:not(.showtime) .jumboslider-item {
+    opacity: 0 !important;
+  }
+
+  &.showtime .jumboslider-item {
+    opacity: 1;
+  }
+
+  .jumboslider-item {
+    position: relative;
+    max-height: calc(100vh - 80px);
+    min-height: 200px;
+    overflow: auto;
+
+    &:not(.done)::after {
+      position: relative;
+      z-index: 2;
+      display: block;
+      width: 32px;
+      height: 32px;
+      margin: 20px auto 50px;
+      background: url('../images/spinner.gif') no-repeat 0 0;
+      background-size: 32px auto;
+      content: '';
+    }
+
+    header,
+    .shot {
+      width: 80%;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 20px 39px 0;
+
+      p {
+        margin: 0;
+      }
+
+      p,
+      a,
+      a:active {
+        color: $body-bg !important;
+      }
+    }
+
+    .shot {
+      position: relative;
+      padding: 8% 39px;
+
+      &:first-of-type { padding-top:    20px; }
+      &:last-of-type  { padding-bottom: 20px; }
+
+      img {
+        @include box-shadow(0 0 10px rgba($gray-base, .8));
+
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid $gray-dark;
+      }
+
+      + .shot::before {
+        position: absolute;
+        top: -52px;
+        left: 0;
+        display: block;
+        width: 100%;
+        font-size: 60px;
+        color: $body-bg;
+        text-align: center;
+        content: '•';
+      }
+    }
+  }
+
+  .jumboslider-viewport:not(:last-child) .jumboslider-item .shot:last-of-type::after {
+    display: block;
+    height: 50px;
+    content: '';
+  }
+
+  .jumboslider-overview {
+    @include transition(left .3s ease-in-out);
+  }
+
+  .jumboslider-pagination {
+    @include box-shadow(0 0 10px rgba($gray-base, .1));
+
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    height: 50px;
+    background: $body-bg;
+    border-top: 1px solid $gray-lightest;
+
+    .holder {
+      margin-top: 18px;
+    }
+
+    .jumboslider-pagination-current {
+      @include transition(left .3s ease-in-out);
+    }
+  }
+
+  &.jumboslider-paginated {
+    margin-bottom: 0;
+  }
+
+  .jumboslider-arrows a {
+    @include transition(none);
+
+    top: 40px;
+    bottom: 50px;
+    width: 40px;
+    height: auto;
+    opacity: 1;
+
+    &::after {
+      @include transition(none);
+      @include border-radius(3px 0 0 3px);
+
+      width: 32px;
+      margin-top: -40px;
+      font-size: 20px;
+      line-height: 80px;
+      color: $body-bg;
+      background-color: $col-blue;
+      content: '➜' !important;
+      opacity: 1;
+    }
+
+    &.jumboslider-prev-arrow::after {
+      @include rotate(180deg);
+    }
+
+    &.jumboslider-next-arrow::after {
+      @include border-radius(3px 0 0 3px);
+
+      right: 0;
+      left: auto;
+    }
+
+    &:hover {
+      background-color: rgba($col-green, .4);
+
+      &::after {
+        background-color: $col-green;
+      }
+    }
+
+    &:active {
+      background-color: transparent;
+
+      &::after {
+        background-color: $col-red;
+      }
+    }
+  }
+}
+
+.mobile {
+  .jumboslider {
+    .jumboslider-overview {
+      @include transition(left .0001s ease-in-out);
+    }
+
+    .jumboslider-arrows {
+      a {
+        bottom: 0;
+
+        &:hover {
+          background-color: transparent;
+        }
+
+        &::after {
+          background-color: $col-blue;
+        }
+
+        &:active {
+          &::after {
+            background-color: $col-red;
+          }
+        }
+      }
+    }
+
+    .jumboslider-pagination,
+    .jumboslider-viewport:not(:last-child) .jumboslider-item .shot:last-child::after {
+      display: none;
+    }
+  }
+}
+
+.ios {
+  .jumboslider {
+    .jumboslider-item {
+      padding-bottom: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .jumboslider {
+    .jumboslider-item {
+      header,
+      .shot {
+        width: auto;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 599px) {
+
+  .jumboslider {
+    .jumboslider-pagination,
+    .jumboslider-viewport:not(:last-child) .jumboslider-item .shot:last-child::after {
+      display: none;
+    }
+
+    .jumboslider-arrows a {
+      bottom: 0;
+    }
+  }
+
+}
