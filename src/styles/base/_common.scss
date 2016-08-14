@@ -1,0 +1,136 @@
+/* =========================| Common |========================= */
+
+
+
+.portfolio {
+
+  section {
+    padding: 0  3%;
+    margin:  0 -3% 8%;
+    font-size: 100%;
+    line-height: 1.5;
+    text-align: left;
+
+    .name {
+      float: left;
+      width: 56%;
+      color: $gray-666;
+      text-transform: none;
+    }
+
+    .links {
+      float: right;
+
+      a {
+        margin-left: 10px;
+        cursor: pointer;
+
+        &.dead {
+          text-decoration: line-through;
+          cursor: default;
+
+          &,
+          &:active {
+            color: $gray !important;
+          }
+        }
+      }
+    }
+
+    ul.items {
+      padding: 0  3%;
+      margin:  0 -3%;
+      list-style: none;
+    }
+
+    .period {
+      $period-width: 18%;
+
+      @include accelerate-gpu();
+
+      position: absolute;
+      top: 2%;
+      left: -($period-width + 1);
+      width: $period-width;
+      text-align: right;
+      white-space: nowrap;
+    }
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: $gray-darker;
+    text-transform: uppercase;
+  }
+
+  h2,
+  h3 { font-size: 100%; }
+
+  h2 { margin: 0 0 2.75%; }
+
+  h3 {
+    margin: 0;
+    font-weight: normal;
+  }
+
+  p {
+    margin: 0;
+
+    &:not(:last-of-type) {margin-bottom: 3.44%; }
+  }
+
+  .meta {
+    font-size: 83.333333333%;
+    font-style: italic;
+    cursor: default;
+
+    &.light,
+    > .light { color: $gray-999; }
+
+    &.dark,
+    > .dark { color: $gray-666; }
+  }
+
+  .item {
+    header {
+      @include transition(background-color 1s ease-in-out);
+
+      padding: 0  3%;
+      margin:  0 -3%;
+      background-color: $col-marked;
+    }
+
+    &:not(:last-child) { margin-bottom: 1.2%; }
+
+    &:nth-of-type(2n+2) header { background-color: $body-bg; }
+  }
+
+  .bullet::before { @include bullet(); }
+
+  .popup { display: none; }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .portfolio {
+
+    // h3 { text-transform: none; }
+
+    section {
+      width: auto;
+      padding: 0  16px;
+      margin:  0 -16px 8%;
+    }
+
+    .item {
+      header {
+        padding: 0  16px;
+        margin:  0 -16px;
+      }
+    }
+
+  }
+
+}

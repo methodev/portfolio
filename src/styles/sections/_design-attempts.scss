@@ -1,0 +1,51 @@
+/* =========================| First design attempts |========================= */
+
+
+
+.section-design {
+
+  .design {
+    display: block;
+    float: left;
+    width: 31.333333333%;
+
+    &:not(:last-child) { margin-right: 3%; }
+  }
+
+  .label {
+    padding: 0 9.3%;
+    margin: 0 -9.3%;
+    color: $gray-666;
+    text-transform: none;
+    background-color: $col-marked;
+  }
+
+  .portfolio & .links {
+    float: none;
+
+    a { margin: 0 10px 0 0; }
+  }
+}
+
+@media screen and (max-width: 479px) {
+
+  .portfolio .section-design {
+
+    .design {
+      float: none;
+      width: auto;
+      margin: 0 0 5%;
+
+      .label {
+        padding: 0 16px;
+        margin: 0 -16px;
+      }
+
+      p {
+        margin: 1.32% 0;
+      }
+    }
+
+  }
+
+}

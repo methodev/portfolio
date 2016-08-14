@@ -1,0 +1,102 @@
+{
+  "summary": {
+    "label": "Summary",
+    "content": [
+      "This document represents my professional portfolio. It includes a selective part of both personal and assigned works which I had the honor to be part of and the opportunity to grow through them.",
+      "All projects differ in substance, assigners, complexity and requirements. They have been developed in times of changing web technologies (2008 — till now). Some of them, though outdated, are still functional, while others have been modified or replaced by newer versions."
+    ]
+  },
+
+  "jquery": {
+    "label": "Personal jQuery plugins",
+    "content": [
+      {
+        "name": "BaseHeight",
+        "description": "Equal heights for set of responsive columns",
+        "date": "08/2015"
+      },
+      {
+        "name": "JumboSlider",
+        "description": "Yet another responsive slider for any kind of content",
+        "date": "04/2015"
+      },
+      {
+        "name": "StickMe",
+        "description": "Fixed elements depending on the scroll position",
+        "date": "03/2015"
+      },
+      {
+        "name": "LightLayer",
+        "description": "A simple responsive lightbox & dialog script",
+        "date": "07/2014"
+      },
+      {
+        "name": "PhotoRoller",
+        "description": "A mouseover cycle-through photo gallery (iPhoto-like)",
+        "date": "2011"
+      },
+      {
+        "name": "MemoryRoll",
+        "description": "Smart sequence loop starting from a random number",
+        "date": "2010"
+      }
+    ]
+  },
+
+  "latest": {
+    "label": "Latest freelance assignments"
+  },
+
+  "past": {
+    "label": "Past assignments",
+    "content": {
+      "edamam": {
+        "employer": "Edamam, LLC",
+        "period": {
+          "start": "2012",
+          "end": "2013"
+        },
+        "meta": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "jQuery",
+          "JSP",
+          "Panic Coda 2",
+          "Adobe Photoshop"
+        ]
+      },
+      "bsh": {
+        "employer": "BSH Ltd.",
+        "period": {
+          "start": "2010",
+          "end": "2011"
+        },
+        "meta": [
+          "XHTML",
+          "CSS",
+          "jQuery",
+          "WordPress",
+          "Adobe Dreamweaver / Illustrator"
+        ]
+      },
+      "magstudio": {
+        "employer": "Mag Studio Ltd.",
+        "period": {
+          "start": "2008",
+          "end": "2009"
+        },
+        "meta": [
+          "XHTML",
+          "CSS",
+          "jQuery",
+          "Adobe Dreamweaver / Photoshop / Fireworks"
+        ]
+      }
+    }
+  },
+
+  "design": {
+    "label": "First design attempts"
+  }
+}

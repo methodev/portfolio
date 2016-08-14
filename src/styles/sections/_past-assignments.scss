@@ -1,0 +1,100 @@
+/* =========================| Past assignments |========================= */
+
+
+
+.section-past {
+
+  .stage:not(:last-of-type) { margin-bottom: 6%; }
+
+  .info {
+    dl { margin: 1% 0 3%; }
+
+    dt,
+    dd { float: left; }
+
+    dt { clear: left; }
+
+    dd { margin-left: 10px; }
+  }
+
+  //.label { margin-bottom: 1%; }
+
+  //.projects {
+  //    padding: 0;
+  //    margin: 0;
+  //
+  //    &:not(:last-of-type) { margin-bottom: 6.6%; }
+  //}
+
+  //.project {
+  //    list-style: none;
+  //    margin:  0 -3%;
+  //    padding: 0  3%;
+  //
+  //    &:nth-child(2n+1) { background-color: #F5F5F5; }
+  //
+  //    &:not(:last-child) { margin-bottom: 1.2%; }
+  //
+  //    &:before { .bullet(); }
+  //}
+
+  //@projectWidth: 80%;
+  //
+  //.date {
+  //    padding: 0.6% 0 0 @projectWidth;
+  //    text-align: right;
+  //    font-style: normal;
+  //    white-space: nowrap;
+  //}
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .section-past {
+
+    .project {
+      position: relative;
+      padding: 0  16px;
+      margin:  0 -16px;
+    }
+
+    .name {
+      float: none;
+      width: auto;
+
+      br {display: block;}
+
+      .info {
+        display: block;
+
+        &::before { content: ''; }
+      }
+    }
+
+    .date {
+      position: absolute;
+      top: 3px;
+      right: 5%;
+      display: block;
+      padding: 0;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .portfolio .section-past {
+
+    .name { width: auto; }
+
+    .info dt,
+    .info dd { float: none; }
+
+    .info dd { margin-left: 0; }
+
+  }
+
+}

@@ -1,0 +1,15 @@
+mixin projectLine(item, index)
+    h3.name #{item.name}
+    span.links.meta
+        if item.status == 'dev'
+            | in progress
+        else if item.status == 'stop'
+            | cancelled
+        else if item.status == 'prod'
+            if item.url
+                a(href='#{item.url}', target='_blank') production
+            else
+                a.dead(title='This website is no longer available.') production
+
+        - var shotsLabel = (item.shots != 1 ? 'screenshots' : 'screenshot')
+        a.screenshots(rel='#{index}', data-title='#{item.name}', data-toggle='modal', data-target='#gallery-slider') #{shotsLabel}

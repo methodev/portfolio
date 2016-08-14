@@ -1,0 +1,312 @@
+{
+  "gs": {
+    "name": "Grønbech & Sønner A/S",
+    "category": "latest",
+    "assigner": "freelance",
+    "date": "03/2016",
+    "status": "dev",
+    "meta": [
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "Less",
+      "JavaScript",
+      "jQuery",
+      "jQuery UI",
+      "Grunt",
+      "WebStorm 11",
+      "Ghostlab 2",
+      "Adobe Photoshop"
+    ],
+    "shots": 10
+  },
+  "ka": {
+    "name": "Kjærgaarden Auto",
+    "category": "latest",
+    "assigner": "freelance",
+    "date": "02/2016",
+    "status": "dev",
+    "meta": [
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "Less",
+      "JavaScript",
+      "jQuery",
+      "Grunt",
+      "WebStorm 11",
+      "Ghostlab 2",
+      "Adobe Photoshop"
+    ],
+    "shots": 10
+  },
+  "evidensia": {
+    "name": "Evidensia",
+    "category": "latest",
+    "assigner": "freelance",
+    "date": "12/2015",
+    "status": "dev",
+    "meta": [
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "Less",
+      "JavaScript",
+      "jQuery",
+      "Grunt",
+      "WebStorm 11",
+      "Ghostlab 2",
+      "Adobe Photoshop"
+    ],
+    "shots": 7
+  },
+  "zareferendum": {
+    "name": "ZaReferendum",
+    "category": "latest",
+    "assigner": "freelance",
+    "date": "08/2015",
+    "status": "prod",
+    "url": "http://zareferendum.bg",
+    "meta": [
+      "HTML5",
+      "CSS3",
+      "Less",
+      "JavaScript",
+      "jQuery",
+      "Grunt",
+      "Sublime Text 3",
+      "Ghostlab 2",
+      "Adobe Illustrator"
+    ],
+    "shots": 5,
+    "design": {
+      "author": "Ivelina Ancheva",
+      "url": "https://bg.linkedin.com/in/iva-ancheva-6a393763"
+    }
+  },
+  "netage_solutions": {
+    "name": "Netage Solutions",
+    "category": "latest",
+    "assigner": "freelance",
+    "date": "04/2015",
+    "status": "stop",
+    "meta": [
+      "HTML5",
+      "CSS3",
+      "Less",
+      "JavaScript",
+      "jQuery",
+      "RequireJS",
+      "Grunt",
+      "Sublime Text 3",
+      "Ghostlab 2",
+      "Adobe Illustrator"
+    ],
+    "shots": 15,
+    "design": {
+      "author": "Boril Karaivanov",
+      "url": "http://redesign.bg/en"
+    }
+  },
+  "edamam": {
+    "name": "Edamam",
+    "category": "past",
+    "assigner": "edamam",
+    "status": "prod",
+    "url": "https://edamam.com",
+    "shots": 5,
+    "design": {
+      "author": "Emilia Christova",
+      "url": "https://bg.linkedin.com/in/emiliachristova"
+    }
+  },
+  "hosting_services": {
+    "name": "SuperHosting presentation",
+    "category": "past",
+    "assigner": "bsh",
+    "status": "prod",
+    "shots": 5,
+    "design": {
+      "author": "Boril Karaivanov",
+      "url": "http://redesign.bg/en"
+    }
+  },
+  "atrend": {
+    "name": "ATrend",
+    "category": "past",
+    "assigner": "bsh",
+    "status": "prod",
+    "url": "http://atrend.bg",
+    "shots": 5,
+    "design": {
+      "author": "Boril Karaivanov",
+      "url": "http://redesign.bg/en"
+    }
+  },
+  "sofiatrend": {
+    "name": "SofiaTrend",
+    "category": "past",
+    "assigner": "bsh",
+    "status": "prod",
+    "url": "http://sofiatrend.bg",
+    "shots": 19,
+    "design": {
+      "author": "Boril Karaivanov",
+      "url": "http://redesign.bg/en"
+    }
+  },
+  "razgledai": {
+    "name": "Razgledai.bg",
+    "category": "past",
+    "assigner": "bsh",
+    "status": "prod",
+    "url": "http://www.razgledai.bg",
+    "shots": 13,
+    "design": {
+      "author": "Boril Karaivanov",
+      "url": "http://redesign.bg/en"
+    }
+  },
+  "balkan_holidays": {
+    "name": "Balkan Holidays",
+    "category": "past",
+    "assigner": "bsh",
+    "status": "prod",
+    "shots": 9,
+    "design": {
+      "author": "Dimana Grigorova",
+      "url": "https://bg.linkedin.com/in/dimanagrigorova"
+    }
+  },
+  "armeec": {
+    "name": "Armeec Jsc",
+    "category": "past",
+    "assigner": "bsh",
+    "status": "prod",
+    "shots": 5,
+    "design": {
+      "author": "Boril Karaivanov",
+      "url": "http://redesign.bg/en"
+    }
+  },
+  "boyanov": {
+    "name": "Boyanov & Co.",
+    "category": "past",
+    "assigner": "bsh",
+    "status": "prod",
+    "url": "http://boyanov.bg",
+    "shots": 5,
+    "design": {
+      "author": "Boril Karaivanov",
+      "url": "http://redesign.bg/en"
+    }
+  },
+  "webloz10": {
+    "name": "Webloz’10",
+    "category": "past",
+    "assigner": "bsh",
+    "status": "prod",
+    "shots": 2,
+    "design": {
+      "author": "Boril Karaivanov",
+      "url": "http://redesign.bg/en"
+    }
+  },
+  "rama_cremefine": {
+    "name": "Rama Cremefine",
+    "category": "past",
+    "assigner": "magstudio",
+    "status": "prod",
+    "shots": 11
+  },
+  "sofica_group": {
+    "name": "Sofica Group",
+    "category": "past",
+    "assigner": "magstudio",
+    "status": "prod",
+    "url": "http://www.sofica-group.com/en",
+    "shots": 6
+  },
+  "jagdterrier": {
+    "name": "JagdTerrier",
+    "category": "past",
+    "assigner": "magstudio",
+    "status": "prod",
+    "shots": 14
+  },
+  "survivor4": {
+    "name": "bTV Survivor 4",
+    "category": "past",
+    "assigner": "magstudio",
+    "status": "prod",
+    "shots": 10
+  },
+  "save_the_man": {
+    "name": "Kamenitza: Save the Man",
+    "category": "past",
+    "assigner": "magstudio",
+    "status": "prod",
+    "shots": 12
+  },
+  "biser_oliva": {
+    "name": "Biser Oliva",
+    "category": "past",
+    "assigner": "magstudio",
+    "status": "prod",
+    "shots": 4
+  },
+  "apollonia": {
+    "name": "Apollonia",
+    "category": "past",
+    "assigner": "magstudio",
+    "status": "prod",
+    "shots": 12
+  },
+  "kamenitza_fanclub": {
+    "name": "Kamenitza Fanclub",
+    "category": "past",
+    "assigner": "magstudio",
+    "status": "prod",
+    "shots": 24
+  },
+  "bnb": {
+    "name": "Bulgarian National Bank",
+    "category": "past",
+    "assigner": "magstudio",
+    "status": "prod",
+    "url": "http://bnb.bg/#?toLang=_EN",
+    "shots": 10
+  },
+  "ubb": {
+    "name": "Bulgarian Capitals, Strongholds and Relics",
+    "category": "past",
+    "assigner": "magstudio",
+    "status": "prod",
+    "shots": 1
+  },
+  "ripie6": {
+    "name": "RIPIE6",
+    "category": "design",
+    "date": "May, 2009",
+    "description": "RIPIE6 is the obituary notice of Internet Explorer 6’s death. It’s a message for all users who still use that \"browser\".",
+    "shots": 1
+  },
+  "natural_designs": {
+    "name": "Natural Designs",
+    "category": "design",
+    "date": "November, 2008",
+    "description": "My personal webpage during 2008-2009. Came as a sudden idea, it was designed and developed within 4 hours during a night time.",
+    "shots": 1
+  },
+  "beauty_and_the_art": {
+    "name": "Beauty and the ART",
+    "category": "design",
+    "date": "September, 2007",
+    "description": "User's Choise Prize at Prestigio 3rd International Wallpapers Contest \"The Charm of Hi-Tech\".",
+    "shots": 1,
+    "more": {
+      "label": "press release",
+      "url": "http://www.prestigio.com/news/company_news/results_wallpapers"
+    }
+  }
+}

@@ -1,0 +1,233 @@
+/* =========================| Gallery Overview |========================= */
+
+
+
+//====================> 0. Settings
+
+$gallery-item-ratio: 1.25;
+
+@function gallery-column($count) {
+  @return 100% / $count
+}
+
+@function gallery-item-width($count) {
+  @return gallery-column($count) / $gallery-item-ratio;
+}
+
+@function gallery-item-space($count) {
+  @return gallery-column($count) - gallery-item-width($count)
+}
+
+@mixin gallery-item($count) {
+  $project-width: gallery-item-width($count);
+  $project-space: gallery-item-space($count);
+
+  width: $project-width;
+  margin: 0 ($project-space / 2) $project-space;
+}
+
+
+
+//====================> 1. Base
+
+.gallery-overview {
+
+  &.modal {
+    .modal-body {
+      padding: 20px;
+      color: $body-bg;
+    }
+  }
+
+  .info {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .projects {
+    font-size: 0;
+
+    .project {
+      @include gallery-item(6); // number of projects per line
+
+      position: relative;
+      display: inline-block;
+      padding: 0;
+      vertical-align: top;
+
+      .screenshots {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        color: $gray-darker;
+        cursor: pointer;
+        opacity: 0;
+
+        &:active {
+          color: $gray-darker !important;
+        }
+
+        span {
+          @include box-shadow(0 0 10px rgba($gray-base, .2));
+          @include border-radius(2px 2px 0 0);
+
+          position: absolute;
+          top: -22px;
+          left: 0;
+          display: block;
+          width: 100%;
+          font-size: 14px;
+          text-align: center;
+          background-color: $body-bg;
+          opacity: 0;
+
+          strong {
+            display: inline-block;
+            margin-right: 3px;
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 1;
+          }
+        }
+      }
+
+      .ttl {
+        @include ellipsis();
+        @include rotate(-2deg);
+
+        display: block;
+        padding: 8px;
+        margin: 0 -2px -2px;
+        font-size: 16px;
+        color: $body-bg;
+        text-align: center;
+
+        span {
+          white-space: nowrap;
+        }
+      }
+
+      .thumb {
+        position: relative;
+
+        img {
+          // Needs latest Compass, add '@import "compass"' to your scss
+          // Permalink - use to edit and share this gradient:
+          // http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+33,ffffff+66,ffffff+99&1+0,0+33,0+66,1+100
+          @include filter-gradient($body-bg, $body-bg, vertical); // IE6-9
+          @include background-image(linear-gradient(top, rgba($body-bg, 1) 0%, rgba($body-bg, 0) 33%, rgba($body-bg, 0) 66%, rgba($body-bg, .97) 99%, rgba($body-bg, 1) 100%));
+          @include box-shadow(0 0 10px rgba($gray-base, .8));
+
+          display: block;
+          width: 100%;
+          height: auto;
+          padding: 1px;
+        }
+      }
+    }
+  }
+
+}
+
+html:not(.mobile) {
+  .gallery-overview {
+    .projects {
+      .project {
+        .thumb:hover {
+          .screenshots,
+          span {
+            opacity: 1;
+          }
+
+          img {
+            @include box-shadow(0 0 20px rgba($col-highlight, .5));
+
+            background: $body-bg;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ios {
+  .gallery-overview {
+    .projects {
+      padding-bottom: 80px;
+    }
+  }
+}
+
+
+
+//====================> 2. Screen cases
+
+@media screen and (max-width: 1280px) {
+
+  .gallery-overview {
+    .projects {
+      .project {
+        @include gallery-item(5); // number of projects per line
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 999px) {
+
+  .gallery-overview {
+    .projects {
+      .project {
+        @include gallery-item(4); // number of projects per line
+
+        .ttl {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 699px) {
+
+  .gallery-overview {
+    .projects {
+      .project {
+        @include gallery-item(3); // number of projects per line
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 499px) {
+
+  .gallery-overview {
+    .projects {
+      .project {
+        @include gallery-item(2); // number of projects per line
+
+        .screenshots {
+          span {
+            top: -20px;
+            font-size: 12px;
+
+            strong {
+              font-size: 17px;
+            }
+          }
+        }
+
+        .ttl {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+}
