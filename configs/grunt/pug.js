@@ -13,9 +13,9 @@ module.exports = {
             }
         },
         files: {
-            'dist/index.html': 'src/markup/<%= pkg.name %>.jade',
-            'dist/gallery-overview.html': 'src/markup/gallery/overview.jade',
-            'dist/gallery-slider.html': 'src/markup/gallery/slider.jade'
+            'dist/index.html': 'src/markup/<%= pkg.name %>.pug',
+            'dist/gallery-overview.html': 'src/markup/gallery/overview.pug',
+            'dist/gallery-slider.html': 'src/markup/gallery/slider.pug'
         }
     }
 };
