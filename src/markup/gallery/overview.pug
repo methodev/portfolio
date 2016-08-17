@@ -17,10 +17,10 @@ html
                                 if index != 'beauty_and_the_art'
                                     article.project
                                         .thumb
-                                            a.screenshots(rel='#{index}', data-title='#{item.name}', data-toggle='modal', data-target='#gallery-slider', data-dismiss='modal')
+                                            a.screenshots(rel=index, data-title=item.name, data-toggle='modal', data-target='#gallery-slider', data-dismiss='modal')
                                                 - var previewsLabel = (item.shots != 1 ? 'screenshots' : 'screenshot')
                                                 span
                                                     strong #{item.shots}
                                                     | #{previewsLabel}
-                                            img(src='assets/images/projects/thumbs/#{index}.jpg', width='200', alt='#{item.name}')
+                                            img(src='assets/images/projects/thumbs/' + index + '.jpg', width='200', alt=item.name)
                                         span.ttl #{item.name}

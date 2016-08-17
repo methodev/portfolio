@@ -14,9 +14,9 @@ html
                             .jumboslider-viewport
                                 .jumboslider-overview
                                     each item, index in projects
-                                        .jumboslider-item(id='#{index}', data-title='#{item.name}', data-shots='#{item.shots}')
+                                        .jumboslider-item(id=index, data-title=item.name, data-shots=item.shots)
                                             if item.design
                                                 header
                                                     p
                                                         | Design:&nbsp;
-                                                        a(href='#{item.design.url}', target='_blank') #{item.design.author}
+                                                        a(href=item.design.url, target='_blank') #{item.design.author}

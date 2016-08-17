@@ -2,12 +2,12 @@ mixin design(data)
     .designs.cf
         each item, index in projects
             if item.category == 'design'
-                .design(class='#{index}')
+                .design(class=index)
                     h3.label #{item.name}
                     p.date.meta.light #{item.date}
                     p.description #{item.description}
                     p.links.meta
                         - var shotsLabel = (item.shots != 1 ? 'screenshots' : 'screenshot')
-                        a.screenshots(rel='#{index}', data-title='#{item.name}', data-toggle='modal', data-target='#gallery-slider', data-shots='#{item.shots}') #{shotsLabel}
+                        a.screenshots(rel=index, data-title=item.name, data-toggle='modal', data-target='#gallery-slider', data-shots=item.shots) #{shotsLabel}
                         if item.more
-                            a(href='#{item.more.url}', target='_blank') #{item.more.label}
+                            a(href=item.more.url, target='_blank') #{item.more.label}
