@@ -1,4 +1,24 @@
 {
+  "daniela": {
+    "name": "A passion for retouch",
+    "category": "latest",
+    "assigner": "freelance",
+    "date": "08/2016",
+    "status": "prod",
+    "url": "http://daniela.pro",
+    "meta": [
+      "Pug",
+      "Sass",
+      "Compass",
+      "jQuery",
+      "jQuery UI",
+      "Grunt",
+      "WebStorm 11",
+      "Ghostlab 2",
+      "Adobe Photoshop"
+    ],
+    "shots": 5
+  },
   "gs": {
     "name": "Grønbech & Sønner A/S",
     "category": "latest",
