@@ -11,7 +11,7 @@ module.exports = {
 
     styles: {
         files: ['src/styles/**/*.scss'],
-        tasks: ['scsslint', 'clean:styles', 'compass']
+        tasks: ['scsslint', 'clean:styles', 'stripCssComments', 'compass']
     },
 
     scripts: {
