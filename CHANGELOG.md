@@ -1,3 +1,20 @@
+<a name="1.2.0"></a>
+# 1.2.0 (2016-08-29)
+
+
+### Bug Fixes
+
+* **Dependencies' banners:** Removed with stripCssComments ([ab1a617](https://github.com/martinmethod/portfolio/commit/ab1a617))
+* **Typo:** Added missed space in the WebApp name ([77dcd35](https://github.com/martinmethod/portfolio/commit/77dcd35))
+
+
+### Features
+
+* **Pug lint:** Added linter for Pug markup ([c50a32d](https://github.com/martinmethod/portfolio/commit/c50a32d))
+* **Travis:** NodeJS set as an environment ([f04da25](https://github.com/martinmethod/portfolio/commit/f04da25))
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2016-08-26)
 

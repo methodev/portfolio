@@ -1,13 +1,13 @@
 mixin latest(data)
-    each item, index in projects
-        if item.category == 'latest'
-            .item
-                header.cf
-                    +projectLine(item, index)
-                    span.period.meta.light #{item.date}
-                footer.cf.meta
-                    label.light technologies & environment:
-                    p.dark
-                        each meta in item.meta
-                            span #{meta};
-                            | &nbsp;
+  each item, index in projects
+    if item.category === 'latest'
+      .item
+        header.cf
+          +projectLine(item, index)
+          span.period.meta.light #{item.date}
+        footer.cf.meta
+          label.light technologies & environment:
+          p.dark
+            each meta in item.meta
+              span #{meta};
+              | &nbsp;
