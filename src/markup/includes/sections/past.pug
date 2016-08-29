@@ -1,20 +1,20 @@
 mixin past(data)
-    each stage, assigner in data.content
-        .stage
-            p.label #{stage.period.start} — #{stage.period.end}
-            .info
-                dl.meta.cf
-                    dt.light Employer:
-                    dd.dark
-                        span #{stage.employer}
-                    dt.light Technologies & environment:
-                    dd.dark
-                        each meta in stage.meta
-                            span #{meta};
-                            | &nbsp;
-            ul.items
-                each item, index in projects
-                    if (item.category == 'past') && (item.assigner == assigner)
-                        li.item
-                            header.bullet.cf
-                                +projectLine(item, index)
+  each stage, assigner in data.content
+    .stage
+      p.label #{stage.period.start} — #{stage.period.end}
+      .info
+        dl.meta.cf
+          dt.light Employer:
+          dd.dark
+            span #{stage.employer}
+          dt.light Technologies & environment:
+          dd.dark
+            each meta in stage.meta
+              span #{meta};
+              | &nbsp;
+      ul.items
+        each item, index in projects
+          if (item.category === 'past') && (item.assigner === assigner)
+            li.item
+              header.bullet.cf
+                +projectLine(item, index)
