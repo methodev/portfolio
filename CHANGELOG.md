@@ -1,3 +1,15 @@
+<a name="1.3.0"></a>
+# 1.3.0 (2016-09-02)
+
+
+### Features
+
+* **Fullscreen modal:** Removed modals' padding ([7613811](https://github.com/martinmethod/portfolio/commit/7613811))
+* **Slider arrow:** Changed look of slider arrows ([44abae6](https://github.com/martinmethod/portfolio/commit/44abae6))
+* **Sofica Group:** The site is no longer available ([0dc98d4](https://github.com/martinmethod/portfolio/commit/0dc98d4))
+
+
+
 <a name="1.2.0"></a>
 # 1.2.0 (2016-08-29)
 
