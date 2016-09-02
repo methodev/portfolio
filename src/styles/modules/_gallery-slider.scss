@@ -33,7 +33,6 @@
 
   .jumboslider-item {
     position: relative;
-    max-height: calc(100vh - 80px);
     min-height: 200px;
     overflow: auto;
 
@@ -134,26 +133,37 @@
   }
 
   .jumboslider-arrows a {
+    @include background-image(linear-gradient(top, rgba($body-bg, 0) 10%, rgba($body-bg, .5) 46%, rgba($body-bg, .5) 54%, rgba($body-bg, 0) 90%));
+
+    $arrow-width: 32px;
+
     @include transition(none);
 
     top: 40px;
     bottom: 50px;
-    width: 40px;
+    width: $arrow-width;
     height: auto;
     opacity: 1;
 
     &::after {
+      $arrow-height: 160px;
+
       @include transition(none);
       @include border-radius(3px 0 0 3px);
+      @include text-shadow(none);
 
-      width: 32px;
-      margin-top: -40px;
+      width: $arrow-width;
+      margin-top: -($arrow-height / 2);
       font-size: 20px;
-      line-height: 80px;
+      line-height: $arrow-height;
       color: $body-bg;
-      background-color: $col-blue;
       content: '➜' !important;
       opacity: 1;
+
+      &,
+      html.mobile & {
+        background-color: transparent;
+      }
     }
 
     &.jumboslider-prev-arrow::after {
@@ -167,20 +177,24 @@
       left: auto;
     }
 
-    &:hover {
-      background-color: rgba($col-green, .4);
+    @mixin arrow-states($color) {
+      @include background-image(linear-gradient(top, rgba($body-bg, 0) 10%, rgba($body-bg, 1) 46%, rgba($body-bg, 1) 54%, rgba($body-bg, 0) 90%));
 
-      &::after {
-        background-color: $col-green;
-      }
-    }
-
-    &:active {
       background-color: transparent;
 
       &::after {
-        background-color: $col-red;
+        color: $color;
+        background-color: transparent !important;
       }
+    }
+
+    html:not(.mobile) &:hover {
+      @include arrow-states($col-green);
+    }
+
+    html.mobile &:active,
+    html:not(.mobile) &:active {
+      @include arrow-states($col-red);
     }
   }
 }
