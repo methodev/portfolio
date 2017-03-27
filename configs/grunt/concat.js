@@ -8,11 +8,11 @@ module.exports = {
     },
     src: [
       // External libraries
-      'bower_components/css_browser_selector/css_browser_selector.js',
-      'bower_components/fastclick/lib/fastclick.js',
-      'bower_components/jquery/dist/jquery.min.js',
-      'bower_components/jumboslider/dist/js/jquery.jumboslider.min.js',
-      'bower_components/masonry/dist/masonry.pkgd.min.js',
+      'node_modules/css-browser-selector/css_browser_selector.min.js',
+      'node_modules/fastclick/lib/fastclick.js',
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/jumboslider/dist/js/jquery.jumboslider.min.js',
+      'node_modules/masonry-layout/dist/masonry.pkgd.min.js',
 
       // Internal scripts
       'src/scripts/bootstrap.min.js',
