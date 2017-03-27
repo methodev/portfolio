@@ -4,13 +4,13 @@
 
 //--------------------------| Compass
 
-@import 'compass';
+@import '../../node_modules/compass-mixins/lib/compass';
 
 
 //--------------------------| Dependencies
 
-@import 'CSS:../../bower_components/normalize-css/normalize';
-@import 'CSS:../../bower_components/jumboslider/dist/css/jumboslider.min';
+@import '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/jumboslider/dist/css/jumboslider.min';
 
 
 //--------------------------| Libraries
@@ -29,22 +29,29 @@
 
 //--------------------------| Page
 
-@import 'page/*';
+@import 'page/header';
+@import 'page/body';
+@import 'page/footer';
 
 
 //--------------------------| Sections
 
-@import 'sections/*';
+@import 'sections/design-attempts';
+@import 'sections/jquery-plugins';
+@import 'sections/latest';
+@import 'sections/past-assignments';
+@import 'sections/summary';
 
 
 //--------------------------| Components
 
-@import 'components/*';
+@import 'components/modals';
 
 
 //--------------------------| Modules
 
-@import 'modules/*';
+@import 'modules/gallery-overview';
+@import 'modules/gallery-slider';
 
 
 //--------------------------| Print styles
