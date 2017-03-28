@@ -38,7 +38,7 @@ rules:
   no-mergeable-selectors: 0
   no-misspelled-properties:
     - 1
-    - extra-properties: []
+    - extra-properties: ['-webkit-overflow-scrolling']
   no-qualifying-elements:
     - 1
     - allow-element-with-attribute: true
@@ -120,7 +120,7 @@ rules:
   brace-style:
     - 1
     - style: 'stroustrup'
-    - allow-single-line: true
+      allow-single-line: true
   clean-import-paths:
     - 1
     - filename-extension: false

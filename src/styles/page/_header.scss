@@ -14,7 +14,9 @@
       font-size: 150%;
     }
 
-    .meta { font-style: normal; }
+    .meta {
+      font-style: normal;
+    }
 
     .contacts {
       float: left;
@@ -24,9 +26,13 @@
         white-space: nowrap;
 
         &.phone,
-        &.email { display: none; }
+        &.email {
+          display: none;
+        }
 
-        &:not(:last-child) { margin-right: 3%; }
+        &:not(:last-child) {
+          margin-right: 3%;
+        }
       }
     }
 
@@ -35,7 +41,9 @@
       width: 38%;
       text-align: right;
 
-      span { white-space: nowrap; }
+      span {
+        white-space: nowrap;
+      }
 
       a {
         cursor: pointer;
@@ -74,7 +82,9 @@
   }
 
   .download {
-    .text::after { content: 'Download'; }
+    .text::after {
+      content: 'Download';
+    }
   }
 
 }
