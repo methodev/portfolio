@@ -7,7 +7,7 @@
 $gallery-item-ratio: 1.25;
 
 @function gallery-column($count) {
-  @return 100% / $count
+  @return 100% / $count;
 }
 
 @function gallery-item-width($count) {
@@ -15,7 +15,7 @@ $gallery-item-ratio: 1.25;
 }
 
 @function gallery-item-space($count) {
-  @return gallery-column($count) - gallery-item-width($count)
+  @return gallery-column($count) - gallery-item-width($count);
 }
 
 @mixin gallery-item($count) {

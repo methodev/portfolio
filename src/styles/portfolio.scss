@@ -21,37 +21,27 @@
 
 //--------------------------| Base
 
-@import 'base/scaffolding';
-@import 'base/utilities';
-@import 'base/typography';
-@import 'base/common';
+@import 'base/**/*.*';
 
 
 //--------------------------| Page
 
-@import 'page/header';
-@import 'page/body';
-@import 'page/footer';
+@import 'page/**/*.*';
 
 
 //--------------------------| Sections
 
-@import 'sections/design-attempts';
-@import 'sections/jquery-plugins';
-@import 'sections/latest';
-@import 'sections/past-assignments';
-@import 'sections/summary';
+@import 'sections/**/*.*';
 
 
 //--------------------------| Components
 
-@import 'components/modals';
+@import 'components/**/*.*';
 
 
 //--------------------------| Modules
 
-@import 'modules/gallery-overview';
-@import 'modules/gallery-slider';
+@import 'modules/**/*.*';
 
 
 //--------------------------| Print styles

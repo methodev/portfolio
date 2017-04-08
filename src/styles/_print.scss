@@ -4,24 +4,34 @@
 
 @media print {
 
-  body { -webkit-print-color-adjust: exact; }
+  body {
+    -webkit-print-color-adjust: exact;
+  }
 
   .gallery,
   .gradient,
-  header.page { display: none; }
+  header.page {
+    display: none;
+  }
 
   .portfolio {
 
-    section .links { display: none; }
+    section .links {
+      display: none;
+    }
 
     a {
       color: $gray-dark;
       text-decoration: none;
     }
 
-    p:not(:last-of-type) { margin-bottom: 12px; }
+    p:not(:last-of-type) {
+      margin-bottom: 12px;
+    }
 
-    h2 { margin-bottom: 4px; }
+    h2 {
+      margin-bottom: 4px;
+    }
 
     article {
       width: 600px;
@@ -29,29 +39,43 @@
       font-size: 14px;
     }
 
-    section { line-height: 1.4; }
+    section {
+      line-height: 1.4;
+    }
 
     header.title {
 
-      h1 { margin-bottom: -6px; }
+      h1 {
+        margin-bottom: -6px;
+      }
 
       .contacts .contact {
         &.codepen,
-        &.github { display: none; }
+        &.github {
+          display: none;
+        }
 
         &.phone,
-        &.email { display: inline; }
+        &.email {
+          display: inline;
+        }
       }
     }
 
     header.title,
-    section { margin-bottom: 32px; }
+    section {
+      margin-bottom: 32px;
+    }
 
-    .item:not(:last-child) { margin-bottom: 5px; }
+    .item:not(:last-child) {
+      margin-bottom: 5px;
+    }
 
     .section-jquery .item:not(:last-child) .details::after,
     .section-latest .item:not(:last-child) .details::after,
-    .section-past .projects:not(:last-of-type) { margin-bottom: 14px; }
+    .section-past .projects:not(:last-of-type) {
+      margin-bottom: 14px;
+    }
 
     .section-past {
       page-break-before: always;

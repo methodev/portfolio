@@ -9,7 +9,9 @@
     float: left;
     width: 31.333333333%;
 
-    &:not(:last-child) { margin-right: 3%; }
+    &:not(:last-child) {
+      margin-right: 3%;
+    }
   }
 
   .label {
@@ -23,7 +25,9 @@
   .portfolio & .links {
     float: none;
 
-    a { margin: 0 10px 0 0; }
+    a {
+      margin: 0 10px 0 0;
+    }
   }
 }
 
