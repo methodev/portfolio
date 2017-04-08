@@ -1,3 +1,15 @@
+<a name="1.5.0"></a>
+# 1.5.0 (2017-04-08)
+
+
+### Features
+
+* **Bundle:** Removed Ruby dependencies ([93f35d3](https://github.com/martinmethod/portfolio/commit/93f35d3))
+* **Deploy:** GitHub Pages & GitHub Releases ([65caff9](https://github.com/martinmethod/portfolio/commit/65caff9))
+* **System:** Removed .gitignore ([c449973](https://github.com/martinmethod/portfolio/commit/c449973))
+
+
+
 <a name="1.4.0"></a>
 # 1.4.0 (2017-03-27)
 
