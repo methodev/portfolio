@@ -4,9 +4,13 @@
 
 .section-jquery {
 
-  header { position: relative; }
+  header {
+    position: relative;
+  }
 
-  .portfolio & .name { width: auto; }
+  .portfolio & .name {
+    width: auto;
+  }
 
   .info {
     display: inline-block;
@@ -18,7 +22,9 @@
     }
   }
 
-  .description { margin-top: 1.32%; }
+  .description {
+    margin-top: 1.32%;
+  }
 
   footer {
     margin-top: 1.32%;
@@ -35,7 +41,9 @@
       margin-bottom: 0;
     }
 
-    span { white-space: nowrap; }
+    span {
+      white-space: nowrap;
+    }
   }
 
 }
@@ -44,9 +52,13 @@
 
   .portfolio .section-jquery {
 
-    .period { display: none; }
+    .period {
+      display: none;
+    }
 
-    .name { float: none; }
+    .name {
+      float: none;
+    }
 
     .info::before {
       margin: 0;

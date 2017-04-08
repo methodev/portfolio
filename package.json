@@ -2,7 +2,7 @@
   "name": "portfolio",
   "title": "Martin Metodiev's portfolio",
   "description": "Martin Metodiev's portfolio",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
@@ -45,6 +45,7 @@
     "load-grunt-config": "^0.19.2",
     "load-grunt-tasks": "^3.2.0",
     "masonry-layout": "^4.1.1",
+    "node-sass-globbing": "0.0.23",
     "normalize.css": "^6.0.0",
     "time-grunt": "^1.2.1"
   },
@@ -55,6 +56,7 @@
     "projects"
   ],
   "scripts": {
-    "start": "npm install && bundle install && grunt clean:all && grunt dev"
-  }
+    "start": "npm install && grunt clean:all && grunt dev"
+  },
+  "sasslintConfig": "configs/linters/.sass-lint.yml"
 }
