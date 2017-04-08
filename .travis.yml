@@ -1,13 +1,27 @@
 language: node_js
 node_js:
-  - "node"
-
-script: bash ./deploy.sh
-env:
-  global:
-  - ENCRYPTION_LABEL: "ca1a7fa567b6"
-  - COMMIT_AUTHOR_EMAIL: "metodiev.martin@gmail.com"
-
+- node
+script:
+- npm install grunt-cli -g
+- npm install
+- grunt build --target='prod'
+- printf '.gitignore\ndeployed*' > dist/.gitignore
+- printf 'portfolio.martinmetodiev.com' > dist/CNAME
+- cp 'README.md' dist
 branches:
   only:
-  - prod
+  - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
+deploy:
+- provider: releases
+  api_key:
+    secure: LBCm/DSvYAN7CunmNgxHiE2aIpHo8S7mGa/6L1XN51NWK9GyDmBe+SkCNfN0IO1ZbdnN3qeAWW9V3nbAwf0yConEIhtTXFc0fqlpUekXde921ey6wvBhUdRcD0Qos0ElLxza6Th8YiyvyFi0vJ6/GcUu4WtUMwbAYXckK+8fhaN4omUqdpLi0SdaqdnjbGkfzAzjuUaPhZLpoLRsgL6YVgpCHKS6+UvpEe6x5JbvbB9kKbJ917s+IJHFRCdsXhH0PCSZK50hKum8gh2PsvuhHbhm5ISbG/WoMkgslHtKaX4Ye7tFgloXii8eifaZQLyiHdPJbpd/cCkSRFjeqOuBKYFpnGsPXD5zB/+EauMMQgX53+hxfYyafLA92lydYasqwzjg+644wMJrS0oqY5nQiNDNiheR/qX1SAV73fTu1Ta9P3LXzkN7/o8MHwFLJ/Z2SkMD8/D6S1RTH8CIKHOAwZ81D+wrDWvglr7dH20zcEYDmsSAwgD6wiagNCpHNT3OHDN/TwM21ba+208VJPvCLgwk4BSBufB8P5Bld/UttPi4O9XZabHurvh82ZKF3e5RuZzDMltyMunkDWW0xTdPb3uv4YSX4OpJhn3m8cEKMB0cxf0zY0PwA7y+mPrb9Iva/LGlSIUpifYChxv9uG4soG3GIKnOdtpxXWDrVYJync8=
+  skip_cleanup: true
+  on:
+    tags: true
+- provider: pages
+  skip_cleanup: true
+  local_dir: dist
+  github_token:
+    secure: LBCm/DSvYAN7CunmNgxHiE2aIpHo8S7mGa/6L1XN51NWK9GyDmBe+SkCNfN0IO1ZbdnN3qeAWW9V3nbAwf0yConEIhtTXFc0fqlpUekXde921ey6wvBhUdRcD0Qos0ElLxza6Th8YiyvyFi0vJ6/GcUu4WtUMwbAYXckK+8fhaN4omUqdpLi0SdaqdnjbGkfzAzjuUaPhZLpoLRsgL6YVgpCHKS6+UvpEe6x5JbvbB9kKbJ917s+IJHFRCdsXhH0PCSZK50hKum8gh2PsvuhHbhm5ISbG/WoMkgslHtKaX4Ye7tFgloXii8eifaZQLyiHdPJbpd/cCkSRFjeqOuBKYFpnGsPXD5zB/+EauMMQgX53+hxfYyafLA92lydYasqwzjg+644wMJrS0oqY5nQiNDNiheR/qX1SAV73fTu1Ta9P3LXzkN7/o8MHwFLJ/Z2SkMD8/D6S1RTH8CIKHOAwZ81D+wrDWvglr7dH20zcEYDmsSAwgD6wiagNCpHNT3OHDN/TwM21ba+208VJPvCLgwk4BSBufB8P5Bld/UttPi4O9XZabHurvh82ZKF3e5RuZzDMltyMunkDWW0xTdPb3uv4YSX4OpJhn3m8cEKMB0cxf0zY0PwA7y+mPrb9Iva/LGlSIUpifYChxv9uG4soG3GIKnOdtpxXWDrVYJync8=
+  on:
+    tags: true
