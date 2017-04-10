@@ -1,3 +1,13 @@
+<a name="1.5.1"></a>
+## 1.5.1 (2017-04-10)
+
+
+### Bug Fixes
+
+* **JumboSlider:** Broken arrows (fixed v1.1.6) ([19e46f6](https://github.com/martinmethod/portfolio/commit/19e46f6))
+
+
+
 <a name="1.5.0"></a>
 # 1.5.0 (2017-04-08)
 
