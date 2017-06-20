@@ -2,6 +2,17 @@
 
 
 
+$shot-width: 80%;
+$shot-max-width: 1280px;
+$shot-side-offset: 39px;
+
+$pagination-dot-size: 16px;
+$pagination-dot-color: $gray-666;
+$pagination-mask-color: $body-bg;
+$pagination-holes-offset: 10px;
+
+
+
 .gallery-slider {
   &.modal {
     .modal-header {
@@ -50,8 +61,8 @@
 
     header,
     .shot {
-      width: 80%;
-      max-width: 1280px;
+      width: $shot-width;
+      max-width: $shot-max-width;
       margin: 0 auto;
     }
 
@@ -71,7 +82,7 @@
 
     .shot {
       position: relative;
-      padding: 8% 39px;
+      padding: 8% $shot-side-offset;
 
       &:first-of-type { padding-top:    20px; }
       &:last-of-type  { padding-bottom: 20px; }
@@ -105,11 +116,10 @@
     content: '';
   }
 
-  .jumboslider-overview {
-    @include transition(left .3s ease-in-out);
-  }
-
   .jumboslider-pagination {
+    $box-width: $pagination-dot-size + $pagination-holes-offset;
+    $box-height: $pagination-dot-size;
+
     @include box-shadow(0 0 10px rgba($gray-base, .1));
 
     bottom: 0;
@@ -123,8 +133,37 @@
       margin-top: 18px;
     }
 
+    a {
+      width: $box-width;
+      height: $box-height;
+      border-right: #{$pagination-holes-offset / 2 - 3} solid $pagination-mask-color;
+      border-left: #{$pagination-holes-offset / 2 - 3} solid $pagination-mask-color;
+
+      &:hover:not(.current)::after {
+        background-color: $gray-999;
+      }
+
+      &:active:not(.current)::after {
+        background-color: $gray-light;
+      }
+
+      &::after {
+        $offset: 1px;
+
+        left: $offset;
+        width: calc(100% - #{$offset * 2});
+      }
+    }
+
     .jumboslider-pagination-current {
-      @include transition(left .3s ease-in-out);
+      width: $box-width;
+      height: $box-height;
+
+      &::after {
+        width: $pagination-dot-size;
+        height: $pagination-dot-size;
+        background-color: $pagination-dot-color;
+      }
     }
   }
 
@@ -133,11 +172,7 @@
   }
 
   .jumboslider-arrows a {
-    @include background-image(linear-gradient(top, rgba($body-bg, 0) 10%, rgba($body-bg, .5) 46%, rgba($body-bg, .5) 54%, rgba($body-bg, 0) 90%));
-
-    $arrow-width: 32px;
-
-    @include transition(none);
+    $arrow-width: calc((100vw - #{$shot-width} + #{$shot-side-offset * 2}) / 2);
 
     top: 40px;
     bottom: 50px;
@@ -145,82 +180,55 @@
     height: auto;
     opacity: 1;
 
+    svg {
+      max-width: 80px;
+      fill: rgba($body-bg, .8);
+    }
+
     &::after {
-      $arrow-height: 160px;
+      @include border-radius(50%);
+      @include box-shadow(0 0 250px 250px rgba($body-bg, .4));
+      @include translateY(-50%);
 
-      @include transition(none);
-      @include border-radius(3px 0 0 3px);
-      @include text-shadow(none);
-
-      width: $arrow-width;
-      margin-top: -($arrow-height / 2);
-      font-size: 20px;
-      line-height: $arrow-height;
-      color: $body-bg;
-      content: '➜' !important;
-      opacity: 1;
-
-      &,
-      html.mobile & {
-        background-color: transparent;
-      }
-    }
-
-    &.jumboslider-prev-arrow::after {
-      @include rotate(180deg);
-    }
-
-    &.jumboslider-next-arrow::after {
-      @include border-radius(3px 0 0 3px);
-
-      right: 0;
-      left: auto;
-    }
-
-    @mixin arrow-states($color) {
-      @include background-image(linear-gradient(top, rgba($body-bg, 0) 10%, rgba($body-bg, 1) 46%, rgba($body-bg, 1) 54%, rgba($body-bg, 0) 90%));
-
-      background-color: transparent;
-
-      &::after {
-        color: $color;
-        background-color: transparent !important;
-      }
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 100px;
+      opacity: 0;
     }
 
     html:not(.mobile) &:hover {
-      @include arrow-states($col-green);
+      background-color: transparent;
+
+      &::after {
+        opacity: .4;
+      }
+
+      svg {
+        fill: rgba($body-bg, .9);
+      }
     }
 
-    html.mobile &:active,
-    html:not(.mobile) &:active {
-      @include arrow-states($col-red);
+    &:active {
+      &::after {
+        opacity: .6 !important;
+      }
+
+      svg {
+        fill: rgba($body-bg, 1) !important;
+      }
     }
   }
 }
 
 .mobile {
   .jumboslider {
-    .jumboslider-overview {
-      @include transition(left .0001s ease-in-out);
-    }
-
     .jumboslider-arrows {
       a {
         bottom: 0;
 
         &:hover {
           background-color: transparent;
-        }
-
-        &::after {
-          background-color: $col-blue;
-        }
-
-        &:active {
-          &::after {
-            background-color: $col-red;
-          }
         }
       }
     }
@@ -249,11 +257,17 @@
         width: auto;
       }
     }
+
+    .jumboslider-arrows a {
+      $arrow-width: $shot-side-offset - 2px;
+
+      width: $arrow-width;
+    }
   }
 
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 767px) {
 
   .jumboslider {
     .jumboslider-pagination,
@@ -263,6 +277,18 @@
 
     .jumboslider-arrows a {
       bottom: 0;
+    }
+  }
+
+}
+
+@media screen and (min-width: 1600px) {
+
+  .jumboslider {
+    .jumboslider-arrows a {
+      $arrow-width: calc((100vw - #{$shot-max-width} + #{$shot-side-offset * 2}) / 2);
+
+      width: $arrow-width;
     }
   }
 

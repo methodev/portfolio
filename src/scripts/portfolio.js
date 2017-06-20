@@ -108,7 +108,14 @@ jQuery(document).ready(function($) {
             portfolio.gallery.on('shown.bs.modal', function(e) {
               var trigger = $(e.relatedTarget).is('.screenshots') ?
                   $(e.relatedTarget) : $('.screenshots').first(),
-                  project = portfolio.projects[trigger.attr('rel')];
+                  project = portfolio.projects[trigger.attr('rel')],
+                  reveal = function() {
+                    portfolio.gallery.scrollTop(0);
+
+                    if (!portfolio.gallery.slider.is('.showtime')) {
+                      portfolio.gallery.slider.addClass('showtime');
+                    }
+                  };
 
               project.node.scrollTop(0);
 
@@ -120,21 +127,11 @@ jQuery(document).ready(function($) {
 
               setTimeout(function() {
                 portfolio.gallery.slider.jumboslider({
-                  keyboardFocus: true,
-                  onSlide: function() {
-                    setTimeout(function() {
-                      portfolio.gallery.scrollTop(0);
+                  startPosition: project.index + 1,
+                  onSlide: function() { setTimeout(reveal, 0); }
+                });
 
-                      if (!portfolio.gallery.slider.is('.showtime')) {
-                        portfolio.gallery.slider.addClass('showtime');
-                      }
-                    }, 0);
-                  }
-                }).slideTo(project.index + 1, 'force');
-
-                setTimeout(function() {
-                  portfolio.gallery.scrollTop(0);
-                }, 0);
+                setTimeout(reveal, 0);
               }, 0);
 
               if (!project.loading && !project.loaded) {
