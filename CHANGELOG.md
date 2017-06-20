@@ -1,3 +1,17 @@
+<a name="1.6.0"></a>
+# 1.6.0 (2017-06-20)
+
+
+### Features
+
+* **Edamam:** Website is no longer available ([b0eeea9](https://github.com/martinmethod/portfolio/commit/b0eeea9))
+* **grunt-contrib-clean:** Updated to v1.1.0 ([a41921d](https://github.com/martinmethod/portfolio/commit/a41921d))
+* **grunt-contrib-htmlmin:** Updated to v2.4.0 ([9226f5a](https://github.com/martinmethod/portfolio/commit/9226f5a))
+* **JumboSlider:** Updated to version 1.4.5 ([7c94e82](https://github.com/martinmethod/portfolio/commit/7c94e82))
+* **masonry-layout:** Updated to v4.2.0 ([632f949](https://github.com/martinmethod/portfolio/commit/632f949))
+
+
+
 <a name="1.5.1"></a>
 ## 1.5.1 (2017-04-10)
 
