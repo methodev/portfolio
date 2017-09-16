@@ -1,3 +1,14 @@
+<a name="1.7.0"></a>
+# 1.7.0 (2017-09-16)
+
+
+### Features
+
+* **Media Queries:** Small screen improvements ([31ce45b](https://github.com/martinmethod/portfolio/commit/31ce45b))
+* **Summary:** Removed label ([5e34afa](https://github.com/martinmethod/portfolio/commit/5e34afa))
+
+
+
 <a name="1.6.0"></a>
 # 1.6.0 (2017-06-20)
 
