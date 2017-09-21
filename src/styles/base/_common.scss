@@ -140,12 +140,28 @@
       width: auto;
       padding: 0  16px;
       margin:  0 -16px 8%;
+
+      &.section-latest,
+      &.section-past {
+        .item {
+          header {
+            padding: 6px 16px;
+          }
+        }
+      }
+
+      &.section-jquery {
+        .item {
+          header {
+            padding: 10px 16px;
+          }
+        }
+      }
     }
 
     .item {
       header {
-        padding: 0  16px;
-        margin:  0 -16px;
+        margin: 0 -16px;
       }
     }
 
