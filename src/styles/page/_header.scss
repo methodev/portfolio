@@ -96,9 +96,31 @@
     header.title {
       width: auto;
       padding: 0 16px;
-      margin: 0 -16px 6%;
+      margin: 0 -16px 30px;
+      text-align: center;
+
+      h1 {
+        font-size: 240%;
+        white-space: nowrap;
+      }
+
+      .contacts .contact {
+        padding: 0 5px;
+      }
+
+      .subline > div {
+        float: none;
+        width: auto;
+        text-align: center;
+      }
+
+      .contacts {
+        margin-bottom: 30px;
+      }
     }
 
   }
+
+
 
 }
