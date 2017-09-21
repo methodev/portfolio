@@ -1,3 +1,13 @@
+<a name="1.7.1"></a>
+## 1.7.1 (2017-09-21)
+
+
+### Bug Fixes
+
+* **Offsets:** Extend padding on small screens ([ee0e2e2](https://github.com/martinmethod/portfolio/commit/ee0e2e2))
+
+
+
 <a name="1.7.0"></a>
 # 1.7.0 (2017-09-16)
 

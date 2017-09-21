@@ -31,6 +31,21 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+
+  .portfolio .section-design {
+
+    .design {
+      .label {
+        padding: 6px 16px;
+        margin:  0  -16px;
+      }
+    }
+
+  }
+
+}
+
 @media screen and (max-width: 479px) {
 
   .portfolio .section-design {
@@ -39,11 +54,6 @@
       float: none;
       width: auto;
       margin: 0 0 5%;
-
-      .label {
-        padding: 0 16px;
-        margin: 0 -16px;
-      }
 
       p {
         margin: 1.32% 0;
