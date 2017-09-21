@@ -1,3 +1,14 @@
+<a name="1.8.0"></a>
+# 1.8.0 (2017-09-21)
+
+
+### Features
+
+* **Header:** Improved mobile offsets & font-sizes ([36f2f18](https://github.com/martinmethod/portfolio/commit/36f2f18))
+* **Print styles:** Colored hyperlinks ([b5eeeab](https://github.com/martinmethod/portfolio/commit/b5eeeab))
+
+
+
 <a name="1.7.1"></a>
 ## 1.7.1 (2017-09-21)
 
