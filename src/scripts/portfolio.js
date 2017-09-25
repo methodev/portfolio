@@ -179,8 +179,7 @@ jQuery(document).ready(function($) {
 
         project.loading = true;
 
-        $('<img alt="'+project.title+'" src="'+src+'" width="1200">')
-          .load(function() {
+        $('<img alt="'+project.title+'" src="'+src+'" width="1200">').on('load', function() {
             var shot = $('<div class="shot">').append($(this));
 
             project.node.append(shot);
