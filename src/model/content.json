@@ -6,6 +6,10 @@
     ]
   },
 
+  "latest": {
+    "label": "Latest freelance project"
+  },
+
   "jquery": {
     "label": "Personal jQuery plugins",
     "content": [
@@ -42,11 +46,11 @@
     ]
   },
 
-  "latest": {
-    "label": "Latest freelance assignments"
+  "involvements": {
+    "label": "Past involvements"
   },
 
-  "past": {
+  "assignments": {
     "label": "Past assignments",
     "content": {
       "edamam": {

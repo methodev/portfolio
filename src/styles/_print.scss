@@ -76,15 +76,15 @@
 
     .section-jquery .item:not(:last-child) .details::after,
     .section-latest .item:not(:last-child) .details::after,
-    .section-past .projects:not(:last-of-type) {
+    .section-assignments .projects:not(:last-of-type) {
       margin-bottom: 14px;
     }
 
-    .section-past {
+    .section-assignments {
       page-break-before: always;
     }
 
-    .section-past {
+    .section-assignments {
       .websites a {
         font-size: 0;
 

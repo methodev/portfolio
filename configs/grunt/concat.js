@@ -13,9 +13,8 @@ module.exports = {
       'node_modules/jquery/dist/jquery.min.js',
       'node_modules/jumboslider/dist/js/jquery.jumboslider.min.js',
       'node_modules/masonry-layout/dist/masonry.pkgd.min.js',
-
-      // Internal scripts
-      'src/scripts/bootstrap.min.js',
+      'node_modules/bootstrap/js/dist/modal.js',
+      'node_modules/bootstrap/js/dist/util.js',
       'src/scripts/<%= pkg.name %>.js'
     ],
     dest: 'dist/assets/js/<%= pkg.name %>_bundle.js'
