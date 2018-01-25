@@ -1,3 +1,13 @@
+<a name="1.9.0"></a>
+# 1.9.0 (2018-01-25)
+
+
+### Features
+
+* **New freelance project:** Lettersoup.de ([3283b35](https://github.com/martinmethod/portfolio/commit/3283b35))
+
+
+
 <a name="1.8.0"></a>
 # 1.8.0 (2017-09-21)
 
