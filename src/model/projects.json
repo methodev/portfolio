@@ -1,7 +1,32 @@
 {
+  "lettersoup": {
+    "name": "Lettersoup",
+    "category": "latest",
+    "assigner": "freelance",
+    "date": "10/2017",
+    "status": "prod",
+    "url": "http://www.lettersoup.de",
+    "meta": [
+      "Pug",
+      "Sass",
+      "Compass",
+      "RequireJS",
+      "Handlebars.js",
+      "jQuery",
+      "WordPress",
+      "GruntJS",
+      "WebStorm",
+      "Adobe InDesign"
+    ],
+    "shots": 5,
+    "design": {
+      "author": "Botio Nikoltchev",
+      "url": "http://www.lettersoup.de"
+    }
+  },
   "daniela": {
     "name": "A passion for retouch",
-    "category": "latest",
+    "category": "involvements",
     "assigner": "freelance",
     "date": "08/2016",
     "status": "prod",
@@ -12,16 +37,16 @@
       "Compass",
       "jQuery",
       "jQuery UI",
-      "Grunt",
-      "WebStorm 11",
-      "Ghostlab 2",
+      "GruntJS",
+      "WebStorm",
+      "Ghostlab",
       "Adobe Photoshop"
     ],
     "shots": 5
   },
   "gs": {
     "name": "Grønbech & Sønner A/S",
-    "category": "latest",
+    "category": "involvements",
     "assigner": "freelance",
     "date": "03/2016",
     "status": "dev",
@@ -33,16 +58,16 @@
       "JavaScript",
       "jQuery",
       "jQuery UI",
-      "Grunt",
-      "WebStorm 11",
-      "Ghostlab 2",
+      "GruntJS",
+      "WebStorm",
+      "Ghostlab",
       "Adobe Photoshop"
     ],
     "shots": 10
   },
   "ka": {
     "name": "Kjærgaarden Auto",
-    "category": "latest",
+    "category": "involvements",
     "assigner": "freelance",
     "date": "02/2016",
     "status": "dev",
@@ -53,16 +78,16 @@
       "Less",
       "JavaScript",
       "jQuery",
-      "Grunt",
-      "WebStorm 11",
-      "Ghostlab 2",
+      "GruntJS",
+      "WebStorm",
+      "Ghostlab",
       "Adobe Photoshop"
     ],
     "shots": 10
   },
   "evidensia": {
     "name": "Evidensia",
-    "category": "latest",
+    "category": "involvements",
     "assigner": "freelance",
     "date": "12/2015",
     "status": "dev",
@@ -73,16 +98,16 @@
       "Less",
       "JavaScript",
       "jQuery",
-      "Grunt",
-      "WebStorm 11",
-      "Ghostlab 2",
+      "GruntJS",
+      "WebStorm",
+      "Ghostlab",
       "Adobe Photoshop"
     ],
     "shots": 7
   },
   "zareferendum": {
     "name": "ZaReferendum",
-    "category": "latest",
+    "category": "involvements",
     "assigner": "freelance",
     "date": "08/2015",
     "status": "prod",
@@ -93,9 +118,9 @@
       "Less",
       "JavaScript",
       "jQuery",
-      "Grunt",
-      "Sublime Text 3",
-      "Ghostlab 2",
+      "GruntJS",
+      "Sublime Text",
+      "Ghostlab",
       "Adobe Illustrator"
     ],
     "shots": 5,
@@ -106,7 +131,7 @@
   },
   "netage_solutions": {
     "name": "Netage Solutions",
-    "category": "latest",
+    "category": "involvements",
     "assigner": "freelance",
     "date": "04/2015",
     "status": "stop",
@@ -117,9 +142,9 @@
       "JavaScript",
       "jQuery",
       "RequireJS",
-      "Grunt",
-      "Sublime Text 3",
-      "Ghostlab 2",
+      "GruntJS",
+      "Sublime Text",
+      "Ghostlab",
       "Adobe Illustrator"
     ],
     "shots": 15,
@@ -130,7 +155,7 @@
   },
   "edamam": {
     "name": "Edamam",
-    "category": "past",
+    "category": "assignments",
     "assigner": "edamam",
     "status": "prod",
     "shots": 5,
@@ -141,7 +166,7 @@
   },
   "hosting_services": {
     "name": "SuperHosting presentation",
-    "category": "past",
+    "category": "assignments",
     "assigner": "bsh",
     "status": "prod",
     "shots": 5,
@@ -152,7 +177,7 @@
   },
   "atrend": {
     "name": "ATrend",
-    "category": "past",
+    "category": "assignments",
     "assigner": "bsh",
     "status": "prod",
     "url": "http://atrend.bg",
@@ -164,7 +189,7 @@
   },
   "sofiatrend": {
     "name": "SofiaTrend",
-    "category": "past",
+    "category": "assignments",
     "assigner": "bsh",
     "status": "prod",
     "url": "http://sofiatrend.bg",
@@ -176,7 +201,7 @@
   },
   "razgledai": {
     "name": "Razgledai.bg",
-    "category": "past",
+    "category": "assignments",
     "assigner": "bsh",
     "status": "prod",
     "url": "http://www.razgledai.bg",
@@ -188,7 +213,7 @@
   },
   "balkan_holidays": {
     "name": "Balkan Holidays",
-    "category": "past",
+    "category": "assignments",
     "assigner": "bsh",
     "status": "prod",
     "shots": 9,
@@ -199,7 +224,7 @@
   },
   "armeec": {
     "name": "Armeec Jsc",
-    "category": "past",
+    "category": "assignments",
     "assigner": "bsh",
     "status": "prod",
     "shots": 5,
@@ -210,7 +235,7 @@
   },
   "boyanov": {
     "name": "Boyanov & Co.",
-    "category": "past",
+    "category": "assignments",
     "assigner": "bsh",
     "status": "prod",
     "url": "http://boyanov.bg",
@@ -222,7 +247,7 @@
   },
   "webloz10": {
     "name": "Webloz’10",
-    "category": "past",
+    "category": "assignments",
     "assigner": "bsh",
     "status": "prod",
     "shots": 2,
@@ -233,63 +258,63 @@
   },
   "rama_cremefine": {
     "name": "Rama Cremefine",
-    "category": "past",
+    "category": "assignments",
     "assigner": "magstudio",
     "status": "prod",
     "shots": 11
   },
   "sofica_group": {
     "name": "Sofica Group",
-    "category": "past",
+    "category": "assignments",
     "assigner": "magstudio",
     "status": "prod",
     "shots": 6
   },
   "jagdterrier": {
     "name": "JagdTerrier",
-    "category": "past",
+    "category": "assignments",
     "assigner": "magstudio",
     "status": "prod",
     "shots": 14
   },
   "survivor4": {
     "name": "bTV Survivor 4",
-    "category": "past",
+    "category": "assignments",
     "assigner": "magstudio",
     "status": "prod",
     "shots": 10
   },
   "save_the_man": {
     "name": "Kamenitza: Save the Man",
-    "category": "past",
+    "category": "assignments",
     "assigner": "magstudio",
     "status": "prod",
     "shots": 12
   },
   "biser_oliva": {
     "name": "Biser Oliva",
-    "category": "past",
+    "category": "assignments",
     "assigner": "magstudio",
     "status": "prod",
     "shots": 4
   },
   "apollonia": {
     "name": "Apollonia",
-    "category": "past",
+    "category": "assignments",
     "assigner": "magstudio",
     "status": "prod",
     "shots": 12
   },
   "kamenitza_fanclub": {
     "name": "Kamenitza Fanclub",
-    "category": "past",
+    "category": "assignments",
     "assigner": "magstudio",
     "status": "prod",
     "shots": 24
   },
   "bnb": {
     "name": "Bulgarian National Bank",
-    "category": "past",
+    "category": "assignments",
     "assigner": "magstudio",
     "status": "prod",
     "url": "http://bnb.bg/#?toLang=_EN",
@@ -297,7 +322,7 @@
   },
   "ubb": {
     "name": "Bulgarian Capitals, Strongholds and Relics",
-    "category": "past",
+    "category": "assignments",
     "assigner": "magstudio",
     "status": "prod",
     "shots": 1

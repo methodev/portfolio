@@ -1,4 +1,4 @@
-mixin past(data)
+mixin assignments(data)
   each stage, assigner in data.content
     .stage
       p.label #{stage.period.start} — #{stage.period.end}
@@ -14,7 +14,7 @@ mixin past(data)
               | &nbsp;
       ul.items
         each item, index in projects
-          if (item.category === 'past') && (item.assigner === assigner)
+          if (item.category === 'assignments') && (item.assigner === assigner)
             li.item
               header.bullet.cf
                 +projectLine(item, index)
