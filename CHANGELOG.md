@@ -1,3 +1,14 @@
+<a name="1.10.0"></a>
+# 1.10.0 (2018-02-13)
+
+
+### Features
+
+* **New freelance project:** Peter.bg ([6df422b](https://github.com/martinmethod/portfolio/commit/6df422b))
+* **Projects:** Added designer for Daniela.pro ([a2ac44e](https://github.com/martinmethod/portfolio/commit/a2ac44e))
+
+
+
 <a name="1.9.0"></a>
 # 1.9.0 (2018-01-25)
 
