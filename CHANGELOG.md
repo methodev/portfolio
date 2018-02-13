@@ -1,3 +1,13 @@
+<a name="1.10.1"></a>
+## 1.10.1 (2018-02-13)
+
+
+### Bug Fixes
+
+* **Broken offsets:** Missed padding for small screens ([4c2052a](https://github.com/martinmethod/portfolio/commit/4c2052a))
+
+
+
 <a name="1.10.0"></a>
 # 1.10.0 (2018-02-13)
 
