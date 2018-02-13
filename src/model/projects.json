@@ -42,7 +42,11 @@
       "Ghostlab",
       "Adobe Photoshop"
     ],
-    "shots": 5
+    "shots": 5,
+    "design": {
+      "author": "Martin Metodiev (me)",
+      "url": "http://www.martinmetodiev.com"
+    }
   },
   "gs": {
     "name": "Grønbech & Sønner A/S",
