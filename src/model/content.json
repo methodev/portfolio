@@ -10,6 +10,10 @@
     "label": "Latest freelance project"
   },
 
+  "involvements": {
+    "label": "Previous freelance projects"
+  },
+
   "jquery": {
     "label": "Personal jQuery plugins",
     "content": [
@@ -50,10 +54,6 @@
         "date": "2010"
       }
     ]
-  },
-
-  "involvements": {
-    "label": "Past involvements"
   },
 
   "assignments": {
