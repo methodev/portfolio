@@ -1,0 +1,70 @@
+/* =========================| React Apps |========================= */
+
+
+
+.section-react {
+
+  header {
+    position: relative;
+  }
+
+  .portfolio & .name {
+    width: auto;
+  }
+
+  .info {
+    display: inline-block;
+
+    &::before {
+      display: inline-block;
+      margin: 0 5px;
+      content: ' : ';
+    }
+  }
+
+  .description {
+    margin-top: 1.32%;
+  }
+
+  footer {
+    margin-top: 1.32%;
+
+    $label-width: 27%;
+
+    label {
+      float: left;
+      width: $label-width;
+    }
+
+    p {
+      padding-left: $label-width + 1.6%;
+      margin-bottom: 0;
+    }
+
+    span {
+      white-space: nowrap;
+    }
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .portfolio .section-react {
+
+    .period {
+      display: none;
+    }
+
+    .name {
+      float: none;
+    }
+
+    .info::before {
+      margin: 0;
+      content: '';
+    }
+
+  }
+
+}

@@ -6,6 +6,18 @@
     ]
   },
 
+  "react": {
+    "label": "React web apps",
+    "content": [
+      {
+        "name": "a17",
+        "title": "Switchboard A17",
+        "description": "A personal app for helping me use the home electrical distribution board",
+        "date": "04/2018"
+      }
+    ]
+  },
+
   "latest": {
     "label": "Latest freelance project"
   },
