@@ -47,7 +47,7 @@
     "load-grunt-tasks": "^3.2.0",
     "masonry-layout": "^4.2.1",
     "node-sass-globbing": "0.0.23",
-    "normalize.css": "^7.0.0",
+    "normalize.css": "^8.0.0",
     "time-grunt": "^1.2.1"
   },
   "keywords": [
