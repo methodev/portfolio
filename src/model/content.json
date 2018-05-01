@@ -15,7 +15,7 @@
   },
 
   "jquery": {
-    "label": "Personal jQuery plugins",
+    "label": "Deprecated jQuery plugins",
     "content": [
       {
         "name": "baseheight",
@@ -57,7 +57,7 @@
   },
 
   "assignments": {
-    "label": "Past assignments",
+    "label": "Obsolete assignments",
     "content": {
       "edamam": {
         "employer": "Edamam, LLC",
