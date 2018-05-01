@@ -14,32 +14,38 @@
     "label": "Personal jQuery plugins",
     "content": [
       {
-        "name": "BaseHeight",
+        "name": "baseheight",
+        "title": "BaseHeight",
         "description": "Equal heights for set of responsive columns",
         "date": "08/2015"
       },
       {
-        "name": "JumboSlider",
+        "name": "jumboslider",
+        "title": "JumboSlider",
         "description": "Yet another responsive slider for any kind of content",
         "date": "04/2015"
       },
       {
-        "name": "StickMe",
+        "name": "stickme",
+        "title": "StickMe",
         "description": "Fixed elements depending on the scroll position",
         "date": "03/2015"
       },
       {
-        "name": "LightLayer",
+        "name": "lightlayer",
+        "title": "LightLayer",
         "description": "A simple responsive lightbox & dialog script",
         "date": "07/2014"
       },
       {
-        "name": "PhotoRoller",
+        "name": "photoroller",
+        "title": "PhotoRoller",
         "description": "A mouseover cycle-through photo gallery (iPhoto-like)",
         "date": "2011"
       },
       {
-        "name": "MemoryRoll",
+        "name": "memoryroll",
+        "title": "MemoryRoll",
         "description": "Smart sequence loop starting from a random number",
         "date": "2010"
       }
