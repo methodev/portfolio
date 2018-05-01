@@ -1,3 +1,21 @@
+<a name="1.11.0"></a>
+# 1.11.0 (2018-05-01)
+
+
+### Bug Fixes
+
+* **jQuery Plugins:** Added title property ([b73ad95](https://github.com/martinmethod/portfolio/commit/b73ad95))
+* **Labels:** Updated section labels ([82176bd](https://github.com/martinmethod/portfolio/commit/82176bd))
+* **Projects:** Broken URL of Razgledai.bg ([c34ba9e](https://github.com/martinmethod/portfolio/commit/c34ba9e))
+* **Sections:** Reordering ([283f303](https://github.com/martinmethod/portfolio/commit/283f303))
+
+
+### Features
+
+* **New section:** React web apps ([c1c408f](https://github.com/martinmethod/portfolio/commit/c1c408f))
+
+
+
 <a name="1.10.7"></a>
 ## 1.10.7 (2018-03-07)
 
