@@ -1,3 +1,13 @@
+<a name="1.11.2"></a>
+## 1.11.2 (2018-06-22)
+
+
+### Bug Fixes
+
+* **Peter Petrov's blog images:** Updated files ([37d46dd](https://github.com/martinmethod/portfolio/commit/37d46dd))
+
+
+
 <a name="1.11.1"></a>
 ## 1.11.1 (2018-06-21)
 
