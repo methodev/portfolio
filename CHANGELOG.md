@@ -1,3 +1,14 @@
+<a name="1.12.0"></a>
+# 1.12.0 (2018-06-23)
+
+
+### Features
+
+* **Labels:** Updated texts ([d901982](https://github.com/martinmethod/portfolio/commit/d901982))
+* **Projects:** Updated status ([9d3347c](https://github.com/martinmethod/portfolio/commit/9d3347c))
+
+
+
 <a name="1.11.2"></a>
 ## 1.11.2 (2018-06-22)
 
