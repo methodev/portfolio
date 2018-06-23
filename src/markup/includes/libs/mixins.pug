@@ -4,12 +4,12 @@ mixin projectLine(item, index)
     if item.status === 'dev'
       | in progress
     else if item.status === 'stop'
-      | cancelled
+      span(title='My technical implementation was cancelled.') cancelled
     else if item.status === 'prod'
       if item.url
         a(href=item.url, target='_blank') production
       else
-        a.dead(title='This website is no longer available.') production
+        a.dead(title='My technical implementation is no longer used.') production
 
     - var shotsLabel = (item.shots !== 1 ? 'screenshots' : 'screenshot')
     a.screenshots(rel=index, data-title=item.name, data-toggle='modal', data-target='#gallery-slider') #{shotsLabel}
