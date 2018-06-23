@@ -77,7 +77,7 @@
     "category": "involvements",
     "assigner": "freelance",
     "date": "03/2016",
-    "status": "dev",
+    "status": "prod",
     "meta": [
       "HTML5",
       "CSS3",
@@ -98,7 +98,7 @@
     "category": "involvements",
     "assigner": "freelance",
     "date": "02/2016",
-    "status": "dev",
+    "status": "prod",
     "meta": [
       "HTML5",
       "CSS3",
@@ -118,7 +118,7 @@
     "category": "involvements",
     "assigner": "freelance",
     "date": "12/2015",
-    "status": "dev",
+    "status": "prod",
     "meta": [
       "HTML5",
       "CSS3",
@@ -139,7 +139,6 @@
     "assigner": "freelance",
     "date": "08/2015",
     "status": "prod",
-    "url": "http://zareferendum.bg",
     "meta": [
       "HTML5",
       "CSS3",
@@ -265,7 +264,6 @@
     "category": "assignments",
     "assigner": "bsh",
     "status": "prod",
-    "url": "http://boyanov.bg",
     "shots": 5,
     "design": {
       "author": "Boril Karaivanov",
