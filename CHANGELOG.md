@@ -1,3 +1,13 @@
+<a name="1.13.0"></a>
+# 1.13.0 (2018-07-24)
+
+
+### Features
+
+* **Content:** New React project: 3D Fractal Art ([18549d2](https://github.com/martinmethod/portfolio/commit/18549d2))
+
+
+
 <a name="1.12.0"></a>
 # 1.12.0 (2018-06-23)
 
