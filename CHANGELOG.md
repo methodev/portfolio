@@ -1,3 +1,13 @@
+<a name="1.14.0"></a>
+# 1.14.0 (2018-07-31)
+
+
+### Features
+
+* **Content:** New React project: Bulls`O`Cows ([36913f9](https://github.com/martinmethod/portfolio/commit/36913f9))
+
+
+
 <a name="1.13.0"></a>
 # 1.13.0 (2018-07-24)
 

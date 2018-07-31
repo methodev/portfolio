@@ -10,10 +10,16 @@
     "label": "React web apps",
     "content": [
       {
+        "name": "bulls-o-cows",
+        "title": "Bulls`O`Cows",
+        "description": "A personal version of the well-known game \"Bulls and Cows\".",
+        "date": "07/2018"
+      },
+      {
         "name": "3d-fractal-art",
         "title": "3D Fractal Art",
         "description": "A gallery of 3D fractals, created by Peter Petrov",
-        "date": "07/2018"
+        "date": "06/2018"
       },
       {
         "name": "a17",
