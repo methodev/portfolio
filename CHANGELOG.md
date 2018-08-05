@@ -1,3 +1,13 @@
+<a name="1.14.1"></a>
+## 1.14.1 (2018-08-05)
+
+
+### Bug Fixes
+
+* **Packages:** Fixed versions ([7c06c16](https://github.com/martinmethod/portfolio/commit/7c06c16))
+
+
+
 <a name="1.14.0"></a>
 # 1.14.0 (2018-07-31)
 
