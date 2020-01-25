@@ -6,4 +6,4 @@ This document represents my professional portfolio. It includes a selective part
 
 All projects differ in substance, assigners, complexity and requirements. They have been developed in times of changing web technologies (2008 — till now). Some of them, though outdated, are still functional, while others have been modified or replaced by newer versions.
 
-— [Martin Metodiev](http://portfolio.martinmetodiev.com "Take a look at my portfolio")
+— [Martin Metodiev](http://portfolio.metodiev.dev "Take a look at my portfolio")
