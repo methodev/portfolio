@@ -2,7 +2,7 @@
   "name": "portfolio",
   "title": "Martin Metodiev's portfolio",
   "description": "Martin Metodiev's portfolio",
-  "version": "1.15.0",
+  "version": "1.15.1",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
     "url": "https://metodiev.dev"
   },
   "dependencies": {
-    "bootstrap": "4.4.1",
+    "bootstrap": "4.1.1",
     "css-browser-selector": "0.6.5",
     "fastclick": "1.0.6",
     "jquery": "3.4.1",
