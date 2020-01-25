@@ -1,12 +1,12 @@
 language: node_js
 node_js:
-- 7.8
+- 10
 script:
 - npm install grunt-cli -g
 - npm install
 - grunt build --target='prod'
 - printf '.gitignore\ndeployed*' > dist/.gitignore
-- printf 'portfolio.martinmetodiev.com' > dist/CNAME
+- printf 'portfolio.metodiev.dev' > dist/CNAME
 - cp 'README.md' dist
 branches:
   only:
