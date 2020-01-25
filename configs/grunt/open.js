@@ -8,7 +8,7 @@ module.exports = {
 
   prod : {
     app: browser,
-    path: 'http://<%= pkg.name %>.metodiev.dev'
+    path: 'https://<%= pkg.name %>.metodiev.dev'
   },
 
   build: {

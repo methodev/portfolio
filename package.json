@@ -8,11 +8,11 @@
     "type": "git",
     "url": "git://github.com/martinmethod/portfolio.git"
   },
-  "homepage": "http://portfolio.metodiev.dev",
+  "homepage": "https://portfolio.metodiev.dev",
   "author": {
     "name": "Martin Metodiev",
     "email": "metodiev.martin@gmail.com",
-    "url": "http://metodiev.dev"
+    "url": "https://metodiev.dev"
   },
   "dependencies": {
     "bootstrap": "4.4.1",
