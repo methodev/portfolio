@@ -1,0 +1,14 @@
+/* =========================| Discontinued |========================= */
+
+
+
+.discontinued {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  color: $body-bg;
+  background-color: $col-red;
+}
