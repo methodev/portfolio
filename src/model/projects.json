@@ -1,28 +1,4 @@
 {
-  "peterpetrov": {
-    "name": "Peter Petrov's blog",
-    "category": "latest",
-    "assigner": "freelance",
-    "date": "01/2018",
-    "status": "prod",
-    "url": "http://www.peter.bg",
-    "meta": [
-      "Pug",
-      "Sass",
-      "Compass",
-      "RequireJS",
-      "jQuery",
-      "WordPress",
-      "GruntJS",
-      "WebStorm",
-      "Adobe Photoshop"
-    ],
-    "shots": 8,
-    "design": {
-      "author": "Martin Metodiev (me)",
-      "url": "https://www.metodiev.dev"
-    }
-  },
   "lettersoup": {
     "name": "Lettersoup",
     "category": "involvements",

@@ -2,40 +2,12 @@
   "summary": {
     "content": [
       "This document represents my professional portfolio. It includes a selective part of both personal and assigned works which I had the honor to be part of and the opportunity to grow through them.",
-      "All projects differ in substance, assigners, complexity and requirements. They have been developed in times of changing web technologies (2008 — till now). Some of them, though outdated, are still functional, while others have been modified or replaced by newer versions."
+      "All projects differ in substance, assigners, complexity and requirements. They have been developed in times of changing web technologies (2008 — 2017). Some of them, though outdated, are still functional, while others have been modified or replaced by newer versions."
     ]
-  },
-
-  "react": {
-    "label": "React web apps",
-    "content": [
-      {
-        "name": "bulls-o-cows",
-        "title": "Bulls`O`Cows",
-        "description": "A personal version of the well-known game \"Bulls and Cows\".",
-        "date": "07/2018"
-      },
-      {
-        "name": "3d-fractal-art",
-        "title": "3D Fractal Art",
-        "description": "A gallery of 3D fractals, created by Peter Petrov",
-        "date": "06/2018"
-      },
-      {
-        "name": "a17",
-        "title": "Switchboard A17",
-        "description": "A personal app for helping me use the home electrical distribution board",
-        "date": "04/2018"
-      }
-    ]
-  },
-
-  "latest": {
-    "label": "Latest freelance project"
   },
 
   "involvements": {
-    "label": "Previous freelance projects"
+    "label": "Freelance projects"
   },
 
   "jquery": {
